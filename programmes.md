@@ -27,7 +27,7 @@ You MUST NOT provide more than one of the following filtering parameters:
 
 ### `ounit_id` (optional)
 
-If given, then the server MUST limit the list of returned programmes IDs to only
+If given, then the server MUST limit the list of returned programmes to only
 such, which are tied to the Organisational Unit with the given ID.
 
 
@@ -46,7 +46,7 @@ Response
 --------
 
 Servers MUST respond with a valid XML document described by the
-[instances-response.xsd](instances-response.xsd) schema. See the schema annotations
+[programmes-response.xsd](programmes-response.xsd) schema. See the schema annotations
 for further information.
 
 
