@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <programmes-response
     xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-programmes/tree/stable-v1"
-    xmlns:crs="https://github.com/erasmus-without-paper/ewp-specs-api-courses/tree/stable-v1"
+    xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         https://github.com/erasmus-without-paper/ewp-specs-api-programmes/tree/stable-v1
@@ -14,17 +14,17 @@
         <title xml:lang="pl">Informatyka, stacjonarne, pierwszego stopnia </title>
         <code>S1-INF</code>
         <eqf-level>6</eqf-level>
-        <crs:ects>180</crs:ects>
-        <crs:language-of-instruction>pl</crs:language-of-instruction>
-        <crs:last-modified>2026-02-18T12:00:00Z</crs:last-modified>
-        <crs:description xml:lang="en">A comprehensive program in computer science.</crs:description>
-        <crs:learning-outcomes xml:lang="en">Ability to design and implement complex software systems.</crs:learning-outcomes>
+        <ewp:ects>180</ewp:ects>
+        <ewp:language-of-instruction>pl</ewp:language-of-instruction>
+        <ewp:last-modified>2026-02-18T12:00:00Z</ewp:last-modified>
+        <ewp:description xml:lang="en">A comprehensive program in computer science.</ewp:description>
+        <ewp:learning-outcomes xml:lang="en">Ability to design and implement complex software systems.</ewp:learning-outcomes>
         <abbreviation>S1-INF</abbreviation>
-        <crs:elm-learning-opportunity-type>79343569f3</crs:elm-learning-opportunity-type>
-        <elm-learning-schedule-type>79343569f3</elm-learning-schedule-type>
-        <crs:elm-mode-of-learning>9191af2ed9</crs:elm-mode-of-learning>
+        <elm-learning-opportunity-type>79343569f3</elm-learning-opportunity-type>
+        <elm-learning-schedule-type>72a0ab92fa</elm-learning-schedule-type>
+        <elm-mode-of-learning>9191af2ed9</elm-mode-of-learning>
         <isced-f-code>0611</isced-f-code>
-        <crs:url xml:lang="en">https://example.com/cs-bsc</crs:url>
+        <ewp:url xml:lang="en">https://example.com/cs-bsc</ewp:url>
         <length>
             <term-count>6</term-count>
             <total-terms>2</total-terms>

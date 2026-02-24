@@ -1,7 +1,6 @@
 <xs:schema
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
-    xmlns:crs="https://github.com/erasmus-without-paper/ewp-specs-api-courses/tree/stable-v1"
     elementFormDefault="qualified"
 
     targetNamespace="https://github.com/erasmus-without-paper/ewp-specs-api-programmes/tree/stable-v1"
@@ -15,12 +14,6 @@
     <xs:import
         schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-types-academic-term/stable-v2/schema.xsd"
         namespace="https://github.com/erasmus-without-paper/ewp-specs-types-academic-term/tree/stable-v2"
-    />
-
-    <!-- TODO: update schema location -->
-    <xs:import
-        schemaLocation="https://raw.githubusercontent.com/mkurzydlowski/ewp-specs-api-courses2/refs/heads/main/endpoints/courses-response.xsd"
-        namespace="https://github.com/erasmus-without-paper/ewp-specs-api-courses/tree/stable-v1"
     />
 
     <xs:annotation>
@@ -108,17 +101,112 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element ref="crs:elm-learning-opportunity-type" minOccurs="0" maxOccurs="unbounded"/>
-                            <xs:element name="elm-learning-schedule-type" type="xs:string">
+                            <xs:element name="elm-learning-opportunity-type" minOccurs="0" maxOccurs="unbounded">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Learning schedule type as defined in the European Learning Model (ELM).
+                                        Learning opportunity type as defined in the European Learning Model (ELM)
+                                        but limited to the items in the controlled vocabulary that may apply to Programmes.
+
+                                        https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/learning-opportunity/25831c2
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="79343569f3">
+                                            <xs:annotation>
+                                                <xs:documentation>Educational programme</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="0f7dac46ca">
+                                            <xs:annotation>
+                                                <xs:documentation>Programme module</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="74a4a268e8">
+                                            <xs:annotation>
+                                                <xs:documentation>Short learning programme</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="elm-learning-schedule-type">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Learning schedule type as defined in the European Learning Model (ELM)
+                                        but limited to the items in the controlled vocabulary that may apply to Programmes.
 
                                         https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/learning-schedule/25831c2
                                     </xs:documentation>
                                 </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="72a0ab92fa">
+                                            <xs:annotation>
+                                                <xs:documentation>Full time</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="f230bae523">
+                                            <xs:annotation>
+                                                <xs:documentation>Part time intensive</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="67395e6b5a">
+                                            <xs:annotation>
+                                                <xs:documentation>Part time light</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
                             </xs:element>
-                            <xs:element ref="crs:elm-mode-of-learning" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="elm-mode-of-learning" minOccurs="0" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Mode of learning and assessment as defined in the European Learning Model (ELM).
+
+                                        https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/learning-assessment/25831c2
+                                    </xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="e92d221e4d">
+                                            <xs:annotation>
+                                                <xs:documentation>Blended</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="c_3a90b26d">
+                                            <xs:annotation>
+                                                <xs:documentation>Hybrid</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="920fbb3cbe">
+                                            <xs:annotation>
+                                                <xs:documentation>Online</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="9191af2ed9">
+                                            <xs:annotation>
+                                                <xs:documentation>Presential</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="7813801c77">
+                                            <xs:annotation>
+                                                <xs:documentation>Project based</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="ed4c557045">
+                                            <xs:annotation>
+                                                <xs:documentation>Research-Lab based</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                        <xs:enumeration value="729f3bed4b">
+                                            <xs:annotation>
+                                                <xs:documentation>Workbased</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
                             <xs:element name="isced-f-code" type="ewp:IscedFCode" minOccurs="0" maxOccurs="unbounded"/>
                             <xs:element ref="ewp:url" minOccurs="0" maxOccurs="unbounded"/>
                             <xs:element name="length" minOccurs="0">
