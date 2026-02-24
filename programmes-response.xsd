@@ -113,7 +113,7 @@
                                 </xs:annotation>
                             </xs:element>
                             <xs:element ref="crs:elm-mode-of-learning" minOccurs="0" maxOccurs="unbounded"/>
-                            <xs:element ref="crs:isced-code" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="isced-f-code" type="ewp:IscedFCode" minOccurs="0" maxOccurs="unbounded"/>
                             <xs:element ref="crs:url" minOccurs="0" maxOccurs="unbounded"/>
                             <xs:element name="length" minOccurs="0">
                                 <xs:annotation>

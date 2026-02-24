@@ -23,7 +23,7 @@
         <crs:elm-learning-opportunity-type>79343569f3</crs:elm-learning-opportunity-type>
         <elm-learning-schedule-type>79343569f3</elm-learning-schedule-type>
         <crs:elm-mode-of-learning>9191af2ed9</crs:elm-mode-of-learning>
-        <crs:isced-code>0611</crs:isced-code>
+        <isced-f-code>0611</isced-f-code>
         <crs:url xml:lang="en">https://example.com/cs-bsc</crs:url>
         <length>
             <term-count>6</term-count>
