@@ -134,8 +134,7 @@
                             <xs:element name="elm-learning-schedule-type">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Learning schedule type as defined in the European Learning Model (ELM)
-                                        but limited to the items in the controlled vocabulary that may apply to Programmes.
+                                        Learning schedule type as defined in the European Learning Model (ELM).
 
                                         https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/snb/learning-schedule/25831c2
                                     </xs:documentation>
