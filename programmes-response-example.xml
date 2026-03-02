@@ -19,11 +19,11 @@
         <ewp:last-modified>2026-02-18T12:00:00Z</ewp:last-modified>
         <ewp:description xml:lang="en">A comprehensive program in computer science.</ewp:description>
         <ewp:learning-outcomes xml:lang="en">Ability to design and implement complex software systems.</ewp:learning-outcomes>
+        <isced-f-code>0611</isced-f-code>
         <abbreviation>S1-INF</abbreviation>
         <elm-learning-opportunity-type>79343569f3</elm-learning-opportunity-type>
         <elm-learning-schedule-type>72a0ab92fa</elm-learning-schedule-type>
         <elm-mode-of-learning>9191af2ed9</elm-mode-of-learning>
-        <isced-f-code>0611</isced-f-code>
         <ewp:url xml:lang="en">https://example.com/cs-bsc</ewp:url>
         <length>
             <term-count>6</term-count>
